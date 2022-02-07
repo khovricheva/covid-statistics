@@ -1,0 +1,17 @@
+.calendar__container {
+    @media (max-width: 970px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .react-calendar {
+        margin: 0;
+        width: 100%;
+
+        @media (max-width: 970px) {
+            min-width: 290px;
+            width: 60%;
+            margin-right: 40px;
+        }
+    }
+}

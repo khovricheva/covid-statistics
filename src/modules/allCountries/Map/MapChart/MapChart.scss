@@ -1,0 +1,11 @@
+@import '../../../../variables.scss';
+
+.map-tooltip {
+    .map-tooltip__title {
+        margin: 0;
+        color: $color-highlight;
+    }
+    .map-tooltip__info {
+        margin: 0;
+    }
+}

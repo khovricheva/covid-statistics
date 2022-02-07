@@ -1,0 +1,29 @@
+.country {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+
+    @media (max-width: 970px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 14px;
+    }
+
+    .country__info {
+        .country__name {
+            margin-top: 0;
+            text-transform: capitalize;
+        }
+        .chart__container {
+            max-width: 100%;
+            height: 600px;
+
+            @media (max-width: 970px) {
+                height: 300px;
+            }
+        }
+    }
+}

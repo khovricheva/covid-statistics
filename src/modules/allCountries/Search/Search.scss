@@ -1,0 +1,25 @@
+@import '../../../variables.scss';
+
+.search-container {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 290px;
+    margin-top: 16px;
+    border: 1px solid $color-border;
+    border-radius: 10px;
+
+    .search-input {
+        width: 90%;
+        margin: 0;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        color: $color-main;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}

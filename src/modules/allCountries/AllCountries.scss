@@ -1,0 +1,23 @@
+.all-countries {
+    display: flex;
+    font-size: 20px;
+
+    @media (max-width: 1270px) {
+        display: block;
+    }
+    @media (max-width: 620px) {
+        font-size: 18px;
+    }
+
+    .all-countries__statistics {
+        width: 60%;
+
+        @media (max-width: 1270px) {
+            width: 100%;
+        }
+
+        .header {
+            margin: 0;
+        }
+    }
+}

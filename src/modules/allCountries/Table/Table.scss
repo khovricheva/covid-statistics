@@ -1,0 +1,74 @@
+@import '../../../variables.scss';
+
+.table {
+    box-sizing: border-box;
+    width: 50%;
+    position: absolute;
+    padding: 0;
+    border: 1px solid $color-border;
+    border-radius: 10px;
+
+    @media (max-width: 1270px) {
+        position: relative;
+        width: 100%;
+    }
+
+    @media (max-width: 620px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 430px) {
+        font-size: 12px;
+    }
+
+    .table__item {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-gap: 5px;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid $color-border;
+
+        @media (max-width: 470px) {
+            padding: 5px;
+        }
+
+        &:first-child {
+            padding: 0;
+
+            .item__title {
+                justify-content: center;
+                padding: 10px;
+
+                @media (max-width: 470px) {
+                    padding: 5px;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .sort-direction-icon {
+                margin: -3px 3px;
+            }
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        div:first-child {
+            display: flex;
+            align-items: center;
+            text-align: left;
+
+            .flag {
+                width: 30px;
+                height: 30px;
+                margin-right: 15px;
+            }
+        }
+    }
+}
